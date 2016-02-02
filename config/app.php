@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_BASEURL', 'http://192.168.20.89/wikiCloud/public/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', '3I6IuKyq0CLHQ9oGl3ISUZ6VeL5FhaeN'),
 
     'cipher' => 'AES-256-CBC',
 

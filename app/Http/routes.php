@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return Redirect::to('/index');
 });
 
 /*
@@ -28,4 +28,8 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+});
+
+Route::group(['namespace' => 'Index'], function(){
+    Route::any('index', 'IndexController@index');
 });
